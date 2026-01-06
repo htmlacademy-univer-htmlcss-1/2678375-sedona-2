@@ -7,35 +7,33 @@
 <body>
   <header class="header">
       <nav class="header-nav">
-        <img class="logo" src="index.html" alt="">
+        <a class="header-logo-link" href="index.html">
+          <img class="logo" src="./images/logo.svg" width="140" height="70" alt="Sedona logo">
+        </a>
         <ul class="header-list">
           <li class="header-item">
-            <a class="header-link" href="#">Главная</a>
+            <a class="header-link" href="index.html">Главная</a>
           </li>
           <li class="header-item">
             <a class="header-link" href="#">О седоне</a>
           </li>
           <li class="header-item">
-            <a class="header-link" href="#">Гостиницы</a>
+            <a class="header-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="header-list">
           <li class="header-item">
-            <a href="#">
-              <img src="#" alt="search-icon">
+            <a class="header-search" href="#">
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="header-item">
-            <span class="visually-hidden">
-              <a href="#">
-                <img src="#" alt="favorites-icon">
-              </a>
-            </span>
+            <a class="header-favorites" href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
           </li>
           <li class="header-item">
-            <span class="visually-hidden">
-              <a class="header-link" href="#">Хочу сюда!</a>
-            </span>
+            <a class="header-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -60,6 +58,7 @@
                       <input class="selector-checkbox" type="checkbox" name="pool" id="pool">
                       Бассейн
                   </label>
+
                   <label class="selector-label">
                       <input class="selector-checkbox" type="checkbox" name="parking" id="parking">
                       Парковка
@@ -83,7 +82,7 @@
                     <input class="selector-radio" type="radio" name="living-type" value="apartments">
                     Апартаменты
                   </label>
-                  </fieldset>
+              </fieldset>
               <fieldset class="selector-fieldset">
                   <legend class="selector-title">Стоимость, ₽:</legend>
               </fieldset>
@@ -110,7 +109,7 @@
           <ul class="result-list">
             <li class="result-item">
               <a href="#" class="result-item-link">
-                <img src="#" alt="Amara Resort" class="result-item-img">
+                <img src="./images/hotel-1.jpg" width="300" height="212" alt="Amara Resort" class="result-item-img">
                 <h3 class="result-item-title">Amara Resort & Spa</h3>
                 <p class="result-item-desc">Гостиница</p>
                 <p class="result-item-price">От 4000 ₽</p>
@@ -118,24 +117,16 @@
               <a class="result-item-button brown" href="#">подробнее</a>
               <button class="result-item-button" type="button">в избранное</button>
               <ul class="result-rating">
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
+                <li class="result-star"></li>
+                <li class="result-star"></li>
+                <li class="result-star"></li>
+                <li class="result-star"></li>
               </ul>
               <span class="result-score">Рейтинг: 8,5</span>
             </li>
             <li class="result-item">
               <a href="#" class="result-item-link">
-                <img src="#" alt="Villas at Poco Diablo" class="result-item-img">
+                <img src="./images/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo" class="result-item-img">
                 <h3 class="result-item-title">Villas at Poco Diablo</h3>
                 <p class="result-item-desc">Гостиница</p>
                 <p class="result-item-price">От 5000 ₽</p>
@@ -143,24 +134,16 @@
               <a class="result-item-button brown" href="#">подробнее</a>
               <a class="result-item-button active" href="#">в избранном</a>
               <ul class="result-rating">
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
+                <li class="result-star"></li>
+                <li class="result-star"></li>
+                <li class="result-star"></li>
+                <li class="result-star"></li>
               </ul>
               <span class="result-score">Рейтинг: 9,2</span>
             </li>
             <li class="result-item">
               <a href="#" class="result-item-link">
-                <img src="#" alt="Desert Quail Inn" class="result-item-img">
+                <img src="./images/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn" class="result-item-img">
                 <h3 class="result-item-title">Desert Quail Inn</h3>
                 <p class="result-item-desc">Гостиница</p>
                 <p class="result-item-price">От 2500 ₽</p>
@@ -168,21 +151,15 @@
               <a class="result-item-button brown" href="#">подробнее</a>
               <a class="result-item-button" href="#">в избранное</a>
               <ul class="result-rating">
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
+                <li class="result-star"></li>
+                <li class="result-star"></li>
+                <li class="result-star"></li>
               </ul>
               <span class="result-score">Рейтинг: 6,9</span>
             </li>
             <li class="result-item">
               <a href="#" class="result-item-link">
-                <img src="#" alt="GreenTree Inn" class="result-item-img">
+                <img src="./images/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn" class="result-item-img">
                 <h3 class="result-item-title">GreenTree Inn</h3>
                 <p class="result-item-desc">Гостиница</p>
                 <p class="result-item-price">От 1500 ₽</p>
@@ -190,12 +167,8 @@
               <a class="result-item-button brown" href="#">подробнее</a>
               <a class="result-item-button" href="#">в избранное</a>
               <ul class="result-rating">
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
-                <li class="result-star">
-                  <img src="#" alt="star-icon">
-                </li>
+                <li class="result-star"></li>
+                <li class="result-star"></li>
               </ul>
               <span class="result-score">Рейтинг: 5,0</span>
             </li>
@@ -244,7 +217,7 @@
     </ul>
     <address class="footer-contacts">
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru/"><img src="#" alt="academy-logo"></a>
+      <a href="https://htmlacademy.ru/"><img src="./images/logo_htmlacademy.svg" width="115" height="33" alt="academy-logo"></a>
     </address>
   </footer>
 </body>
