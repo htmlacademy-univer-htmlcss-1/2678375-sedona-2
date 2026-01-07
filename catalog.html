@@ -6,47 +6,48 @@
   <title>HTML Academy: Гостиницы Седоны</title>
 </head>
 <body>
-    <header class="menu">
-      <nav class="menu-nav">
-        <a class="menu-logo-link" href="index.html">
-          <img class="logo" src="./images/logo.svg" width="140" height="70" alt="Sedona logo">
-        </a>
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a class="menu-link" href="index.html">Главная</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#">О седоне</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a class="menu-link menu-search" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link menu-favorites" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <span class="menu-favorites-counter">12</span>
-            </a>
-          </li>
-          <li class="menu-link menu-item">
-            <button type="button" class="menu-button button">Хочу сюда!</button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  <main class="main-inner">
+  <header class="menu">
+    <nav class="menu-nav">
+      <a class="menu-logo-link" href="index.html">
+        <img class="logo" src="./images/logo.svg" width="140" height="70" alt="Sedona logo">
+      </a>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a class="menu-link" href="index.html">Главная</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#">О седоне</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="menu-list navigation-user">
+        <li class="menu-item">
+          <a class="menu-link menu-search" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link menu-favorites" href="#">
+            <span class="visually-hidden">Избранное</span>
+            <span class="menu-favorites-counter">12</span>
+          </a>
+        </li>
+        <li class="menu-link menu-item">
+          <button type="button" class="menu-button button">Хочу сюда!</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-inner main-container">
+    <div class="page-container">
       <section class="selector">
           <h1 class="selector-header">Гостиницы Седоны</h1>
           <nav class="selector-breadcrumps">
               <ul class="selector-list">
                   <li class="selector-item">
-                      <a class="visually-hidden" href="index.html">Домашняя</a>
+                      <a href="index.html"><span class="visually-hidden">Домашняя</span></a>
                   </li>
                   <li class="selector-item">
                       <a href="#">Гостиницы</a>
@@ -54,13 +55,13 @@
               </ul>
           </nav>
           <form class="selector-form" action="#" method="post">
+            <div class="form-column">
               <fieldset class="selector-fieldset">
                   <legend class="selector-title">Инфраструктура:</legend>
                   <label class="selector-label">
                       <input class="selector-checkbox" type="checkbox" name="pool" id="pool">
                       Бассейн
                   </label>
-
                   <label class="selector-label">
                       <input class="selector-checkbox" type="checkbox" name="parking" id="parking">
                       Парковка
@@ -85,6 +86,8 @@
                     Апартаменты
                   </label>
               </fieldset>
+            </div>
+            <div class="form-column">
               <fieldset class="selector-fieldset">
                   <legend class="selector-title">Стоимость, ₽:</legend>
                   <label class="selector-label">
@@ -96,8 +99,11 @@
                     <span class="price-label">до</span>
                   </label>
               </fieldset>
-              <button type="submit" class="button btn-secondary">Применить</button>
-              <button type="reset" class="button btn-transparent">Сбросить</button>
+              <div class="form-button-row">
+                <button type="submit" class="button btn-secondary">Применить</button>
+                <button type="reset" class="button btn-transparent">Сбросить</button>
+              </div>
+            </div>
           </form>
       </section>
       <section class="result">
@@ -212,23 +218,24 @@
           <button class="button btn-secondary" type="submit">Подписаться</button>
         </form>
       </article>
+    </div>
   </main>
   <footer class="footer">
-    <ul class="footer-list">
-      <li class="footer-item">
-        <a class="visually-hidden" href="https://vk.com/htmlacademy">VK</a>
-      </li>
-      <li class="footer-item">
-        <a class="visually-hidden" href="https://t.me/htmlacademy">Telegram</a>
-      </li>
-      <li class="footer-item">
-        <a class="visually-hidden" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
-      </li>
-    </ul>
-    <address class="footer-contacts">
-      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru/"><img src="./images/logo_htmlacademy.svg" width="115" height="33" alt="academy-logo"></a>
-    </address>
-  </footer>
+      <address class="footer-container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="visually-hidden" href="https://vk.com/htmlacademy">VK</a>
+          </li>
+          <li class="footer-item">
+            <a class="visually-hidden" href="https://t.me/htmlacademy">Telegram</a>
+          </li>
+          <li class="footer-item">
+            <a class="visually-hidden" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+          </li>
+        </ul>
+          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a href="https://htmlacademy.ru/"><img src="./images/logo_htmlacademy.svg" width="115" height="33" alt="academy-logo"></a>
+      </address>
+    </footer>
 </body>
 </html>
