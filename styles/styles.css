@@ -448,13 +448,38 @@ li {
 }
 
 .result-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
 .result-item {
-    width: 340px;
+  display: grid;
+  grid-gap: 16px 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "link link"
+    "more fav"
+    "rating score";
+  padding: 20px;
+
+  border: 1px solid;
+}
+
+.result-item-link {
+  display: grid;
+  grid-gap: 16px 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "img img"
+    "title title"
+    "desc price";
+
+    grid-area: link;
+}
+
+.result-item-img {
+    grid-area: img;
 }
 
 .result-item-link {
@@ -462,24 +487,47 @@ li {
 }
 
 .result-item-title {
+    grid-area: title;
+
+    margin: 0;
     color:#000;
     font-size: 24px;
     line-height: 28px;
 }
 
 .result-item-desc {
+    grid-area: desc;
+
     font-size: 18px;
     line-height: 21px;
     text-align: left;
+    margin: 0;
 }
 
 .result-item-price {
+    grid-area: price;
+
     font-size: 18px;
     line-height: 21px;
     text-align: right;
+    margin: 0;
+}
+
+.more-button {
+    grid-area: more;
+}
+
+.fav-button {
+    grid-area: fav;
+}
+
+.result-rating {
+    grid-area: rating;
 }
 
 .result-score {
+    grid-area: score;
+
     display: inline-block;
     text-transform: uppercase;
     font-size: 16px;
